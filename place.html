@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Vịt quay Trần Quang Ký</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/slider-pro.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/jquery.fancybox.css" rel="stylesheet">
+
+        <!-- Custom core CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <!-- header top -->
+      <section class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="action">
+                <li><a href="#" data-toggle="modal" data-target="#myModalLogin"><i class="fa fa-key" aria-hidden="true"></i>Đăng nhập</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModalSignUp"><i class="fa fa-pencil" aria-hidden="true"></i>Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row site-link">
+            <div class="col-sm-6">
+              <p class="info"><span>(澳門)</span> 陳光記 黑椒燒鴨</p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="link">
+                <li><a href="">giỏ hàng(0)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="search">
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                  <form method="get" action="">
+                    <input type="text" placeholder="" class="text" name="s" autocomplete="off" value="">
+                    <input type="submit" value="Search" class="submit">
+                  </form>
+                </li>
+                <li>
+                  <a href="#"><img src="images/flag-vn.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end header top -->
+
+      <!-- menu -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="introduce.html">GIỚI THIỆU</a></li>
+              <li><a href="menu.html">THỰC ĐƠN</a></li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="news.html">TIN TỨC</a>
+                <ul>
+                  <li><a href="">Hướng dẫn mua hàng</a></li>
+                  <li><a href="">Phương thức thanh toán</a></li>
+                </ul>
+              </li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="place.html">ĐỊA ĐIỂM</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- end header -->
+    </header>
+    <!-- end header -->
+
+    <!-- popup đăng nhập -->
+    <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="user_email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="user_password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng nhập<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng nhập -->
+
+    <!-- popup đăng ký -->
+    <div class="modal fade" id="myModalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">đăng ký</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline checkbox-title">
+                  Giới tính
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng ký<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng ký -->
+
+    <main>
+      <!-- section địa điểm -->
+      <section class="locations">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="filter-wrapper">
+                <li><h3>địa điểm</h3></li>
+                <li class="filter-item-select">
+                  <select>
+                    <option>hồ chí minh</option>
+                    <option>hà nội</option>
+                  </select>
+                </li>
+                <li class="filter-item-select">
+                  <select>
+                    <option>quận 1</option>
+                    <option>quận 2</option>
+                    <option>quận 5</option>
+                    <option>quận 7</option>
+                    <option>quận phú nhuận</option>
+                  </select>
+                </li>
+              </ul>
+
+              <div class="filter-content">
+                <ul class="filter-item-details">
+                  <li>
+                    <div class="details-title">
+                      <h4>VỊT QUAY SỐT TIÊU ĐEN TRẦN QUANG KÝ</h4>
+                      <p>390 Trần Phú, P.7, Q.5, TP.Hồ Chí Minh</p>
+                    </div>
+                    <div class="details-content">
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>390 Trần Phú, Phường 7, Quận 5, TP. Hồ Chí Minh</p>
+                      <p><i class="fa fa-phone" aria-hidden="true"></i>0937 6789 11</p>
+                      <p><i class="fa fa-clock-o" aria-hidden="true"></i>06h00 - 22h00</p>
+                      <div class="btn-more">
+                        <a href="#">xem bản đồ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a rel="group-img" href="images/fancy_img001.jpg" data-fancybox="images-gallery1" >xem gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="details-title">
+                      <h4>VỊT QUAY SỐT TIÊU ĐEN TRẦN QUANG KÝ</h4>
+                      <p>390 Trần Phú, P.7, Q.5, TP.Hồ Chí Minh</p>
+                    </div>
+                    <div class="details-content">
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>390 Trần Phú, Phường 7, Quận 5, TP. Hồ Chí Minh</p>
+                      <p><i class="fa fa-phone" aria-hidden="true"></i>0937 6789 11</p>
+                      <p><i class="fa fa-clock-o" aria-hidden="true"></i>06h00 - 22h00</p>
+                      <div class="btn-more">
+                        <a href="#">xem bản đồ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a rel="group-img1" href="images/fancy_img001.jpg" data-fancybox="images-gallery2" >xem gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="details-title">
+                      <h4>VỊT QUAY SỐT TIÊU ĐEN TRẦN QUANG KÝ</h4>
+                      <p>390 Trần Phú, P.7, Q.5, TP.Hồ Chí Minh</p>
+                    </div>
+                    <div class="details-content">
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>390 Trần Phú, Phường 7, Quận 5, TP. Hồ Chí Minh</p>
+                      <p><i class="fa fa-phone" aria-hidden="true"></i>0937 6789 11</p>
+                      <p><i class="fa fa-clock-o" aria-hidden="true"></i>06h00 - 22h00</p>
+                      <div class="btn-more">
+                        <a href="#">xem bản đồ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a rel="group-img2" href="images/fancy_img001.jpg" data-fancybox="images-gallery3" >xem gallery<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section địa điểm -->
+      <div style="display:none">
+        <a rel="group-img" data-fancybox="images-gallery1" href="images/fancy_img002.jpg"><img src="images/fancy_img002.jpg" /></a>
+        <a rel="group-img" data-fancybox="images-gallery1" href="images/fancy_img003.jpg"><img src="images/fancy_img003.jpg" /></a>
+
+        <a rel="group-img1" data-fancybox="images-gallery2" href="images/fancy_img002.jpg"><img src="images/fancy_img002.jpg" /></a>
+        <a rel="group-img1" data-fancybox="images-gallery2" href="images/fancy_img003.jpg"><img src="images/fancy_img003.jpg" /></a>
+
+        <a rel="group-img2" data-fancybox="images-gallery3" href="images/fancy_img002.jpg"><img src="images/fancy_img002.jpg" /></a>
+        <a rel="group-img2" data-fancybox="images-gallery3" href="images/fancy_img003.jpg"><img src="images/fancy_img003.jpg" /></a>
+      </div>
+
+      <!-- section bản đồ -->
+      <section class="map-container">
+        <div class="map_wide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31356.380304167636!2d106.68292757687294!3d10.769311804042864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef97d12b887%3A0x5f4008a45cc26ac3!2zUXXDoW4gxINuIFbhu4t0IHF1YXkgTWFjYXUgVHLhuqduIFF1YW5nIEvDvQ!5e0!3m2!1svi!2s!4v1500348316723" frameborder="0" style="border:0" allowfullscreen="" class="googlemap"></iframe>
+        </div>
+      </section>
+      <!-- end section bản đồ -->
+
+      <!-- chăm sóc khách hàng -->
+      <div class="take-care">
+        <div class="title">
+          <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chăm sóc khách hàng</span></h3>
+        </div>
+        <div class="content-form">
+
+        </div>
+      </div>
+      <!-- end chăm sóc khách hàng -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <figure><img src="images/ok.png" alt=""></figure>
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            <p class="copy-right">
+              &copy; 2017 Vịt quay Trần Quang Ký . All rights reserved. <br class="sp-only" />Chính sách và quy định chung.<br>
+              Vịt quay Trần Quang Ký - GPKD số 03037044 ngày 26 tháng 06 năm 2017 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp phép
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+      $(document).ready(function() {
+        $("[data-fancybox]").fancybox({});
+      });
+    </script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

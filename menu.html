@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Vịt quay Trần Quang Ký</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/slider-pro.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+        <!-- Custom core CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <!-- header top -->
+      <section class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="action">
+                <li><a href="#" data-toggle="modal" data-target="#myModalLogin"><i class="fa fa-key" aria-hidden="true"></i>Đăng nhập</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModalSignUp"><i class="fa fa-pencil" aria-hidden="true"></i>Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row site-link">
+            <div class="col-sm-6">
+              <p class="info"><span>(澳門)</span> 陳光記 黑椒燒鴨</p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="link">
+                <li><a href="">giỏ hàng(0)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="search">
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                  <form method="get" action="">
+                    <input type="text" placeholder="" class="text" name="s" autocomplete="off" value="">
+                    <input type="submit" value="Search" class="submit">
+                  </form>
+                </li>
+                <li>
+                  <a href="#"><img src="images/flag-vn.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end header top -->
+
+      <!-- menu -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="introduce.html">GIỚI THIỆU</a></li>
+              <li><a href="menu.html">THỰC ĐƠN</a></li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="news.html">TIN TỨC</a>
+                <ul>
+                  <li><a href="">Hướng dẫn mua hàng</a></li>
+                  <li><a href="">Phương thức thanh toán</a></li>
+                </ul>
+              </li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="place.html">ĐỊA ĐIỂM</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- end header -->
+    </header>
+    <!-- end header -->
+
+    <!-- popup đăng nhập -->
+    <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="user_email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="user_password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng nhập<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng nhập -->
+
+    <!-- popup đăng ký -->
+    <div class="modal fade" id="myModalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">đăng ký</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline checkbox-title">
+                  Giới tính
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng ký<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng ký -->
+
+    <!-- popup chọn địa điểm -->
+    <div class="modal fade choseAdd in" id="myChoseAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <figure><img src="images/img-select.png" alt="Vịt quay Trần Quang Ký"></figure>
+            <div class="choose-box">
+              <h3>VUI LÒNG CHỌN KHU VỰC</h3>
+              <h4>QUÝ KHÁCH MUỐN ĐẶT HÀNG</h4>
+              <form action="" method="post">
+                <div class="select-box">
+                  <select>
+                    <option value="">hồ chí minh</option>
+                    <option value="">hà nội</option>
+                  </select>
+                </div>
+                <div class="select-btn">
+                  <button type="button" name="button">tiếp tục</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup giao hang -->
+    <div class="modal fade delivery" id="myDelivery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <ul class="modal-title" id="myModalLabel">
+              <li>
+                <span class="number">1</span>
+                <span>Thời gian &amp; Địa chỉ nhận hàng</span>
+              </li>
+              <li>
+                <span class="number">2</span>
+                <span>Thông tin đơn hàng</span>
+              </li>
+              <li>
+                <span class="number">3</span>
+                <span>Hoàn tất</span>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-body">
+            <div class="map">
+              <div class="map_wide">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31356.380304167636!2d106.68292757687294!3d10.769311804042864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ef97d12b887%3A0x5f4008a45cc26ac3!2zUXXDoW4gxINuIFbhu4t0IHF1YXkgTWFjYXUgVHLhuqduIFF1YW5nIEvDvQ!5e0!3m2!1svi!2s!4v1500348316723" frameborder="0" style="border:0" allowfullscreen="" class="googlemap"></iframe>
+              </div>
+            </div>
+            <div class="locations-info">
+              <ul class="list-info">
+                <li>
+                  <h4><i class="fa fa-map-marker" aria-hidden="true"></i>Trần Quang Ký - Vit Quay Sốt Tiêu Đen</h4>
+                  <p>390 Trần phú, P7, Quận 5, Tp HCM, Vietnam</p>
+                </li>
+                <li>
+                  <h4><i class="fa fa-share" aria-hidden="true"></i>Chọn Hình Thức Giao Hàng</h4>
+                  <p><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Standard Service </p>
+                </li>
+              </ul>
+              <div class="form-customer">
+                <form action="" method="post">
+                  <div class="address-to">
+                    <h4><i class="fa fa-share" aria-hidden="true"></i>Địa Điểm Nhận Hàng</h4>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="nameCustomer" placeholder="Họ tên"><i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="addressCustomer" placeholder="Địa chỉ"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="form-group tel">
+                      <input type="tel" class="form-control" id="phoneCustomer" placeholder="Số điện thoại"><i class="fa fa-phone" aria-hidden="true"></i>
+                      <select>
+                        <option>Chọn quận huyện</option>
+                        <option>quận 1</option>
+                        <option>quận 5</option>
+                        <option>quận 7</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="time-to">
+                    <h4><i class="fa fa-share" aria-hidden="true"></i>Thời gian Nhận Hàng</h4>
+                    <div class="form-group datetime">
+                      <input size="16" type="text" value="05-07-2017" id="form_datetime">
+                      <select>
+                        <option>Càng sớm càng tốt</option>
+                        <option>Bình thường</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                  </div>
+                  <div class="select-btn">
+                    <button type="button" name="button">tiếp tục</button>
+                  </div>
+                </form>
+                <p class="title-form">Est.Distance: 0km - Est. Delivery Fee: 0đ - Est. Time: 20’</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- banner -->
+      <section class="banner">
+        <figure>
+          <img src="images/banner_menu.jpg" alt="Vịt quay Trần Quang Ký">
+          <div class="banner-copy">
+            <img src="images/main_copy.png" alt="Vịt quay Trần Quang Ký">
+          </div>
+        </figure>
+      </section>
+      <!-- banner -->
+
+      <!-- section menu -->
+      <section class="content-menu menu-details">
+        <div class="menu-info-tabs">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#duck" aria-controls="duck" role="tab" data-toggle="tab">món vịt</a></li>
+                  <li role="presentation"><a href="#pig" aria-controls="pig" role="tab" data-toggle="tab">món heo</a></li>
+                  <li role="presentation"><a href="#dish_more" aria-controls="dish_more" role="tab" data-toggle="tab">món thêm</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="duck">
+                  <div class="row">
+                  <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img001.png" alt="ngỗng quay"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">ngỗng quay</a></h3>
+                          <p class="price">900.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img002.png" alt="vịt quay tiêu da giòn"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">vịt quay tiêu da giòn</a></h3>
+                          <p class="price">380.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img003.png" alt="vịt quay sốt tiêu đen"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">vịt quay sốt tiêu đen</a></h3>
+                          <p class="price">340.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img003.png" alt="vịt quay sốt tiêu đen"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">vịt quay sốt tiêu đen</a></h3>
+                          <p class="price">340.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="pig">
+                  <div class="row">
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img004.png" alt="sườn non Nướng Mật Ong"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">sườn non Nướng Mật Ong</a></h3>
+                          <p class="price">260.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img005.png" alt="HEO QUAY SỮA"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">HEO QUAY SỮA</a></h3>
+                          <p class="price">900.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img006.png" alt="Xá Xíu Nướng Mật Ong"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">Xá Xíu Nướng Mật Ong</a></h3>
+                          <p class="price">250.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img007.png" alt="THỊT quay ma cao"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">THỊT quay ma cao</a></h3>
+                          <p class="price">250.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="dish_more">
+                  <div class="row">
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img008.png" alt="gà hấp xì dầu"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">gà hấp xì dầu</a></h3>
+                          <p class="price">340.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 wow fadeIn">
+                      <div class="item">
+                        <figure>
+                          <a href="#"><img src="images/top_img009.png" alt="gà hấp ta"></a>
+                          <div class="info"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></div>
+                        </figure>
+                        <div class="item-detail">
+                          <h3><a href="#">gà hấp ta</a></h3>
+                          <p class="price">320.000<sup>đ</sup></p>
+                          <div class="item-cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="sidebar">
+                <div class="btn-heading">
+                  <p class="more"><a href="#" data-toggle="modal" data-target="#myChoseAddress">đặt hàng</a></p>
+                </div>
+                <div class="content">
+                  <div class="user-info">
+                    <ul>
+                      <li class="avatar"><img src="images/user.png" alt="ken pham"></li>
+                      <li class="user"><a href="#">ken pham</a></li>
+                      <li class="order-number">3 món</li>
+                    </ul>
+                  </div>
+                  <div class="order">
+                    <ul>
+                      <li>
+                        <p>
+                          <span class="drain">+</span>
+                          <input class="item-number" type="number" min="1" max="500" step="1" value="1" />
+                          <span class="minus">-</span>
+                          <span class="delete">x</span>
+                        </p>
+                        <p>
+                          <span>Ghi chú</span>
+                          <span class="price">800,000đ</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span class="drain">+</span>
+                          <input class="item-number" type="number" min="1" max="500" step="1" value="1" />
+                          <span class="minus">-</span>
+                          <span class="delete">x</span>
+                        </p>
+                        <p>
+                          <span>Ghi chú</span>
+                          <span class="price">800,000đ</span>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <span class="drain">+</span>
+                          <input class="item-number" type="number" min="1" max="500" step="1" value="1" />
+                          <span class="minus">-</span>
+                          <span class="delete">x</span>
+                        </p>
+                        <p>
+                          <span>Ghi chú</span>
+                          <span class="price">800,000đ</span>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="total">
+                    <p>
+                      <span>Cộng</span>
+                      <span class="total-price">2,400,000đ</span>
+                    </p>
+                    <p>
+                      <span>Phí vận chuyễn (Est)</span>
+                      <span>5,00đ/km</span>
+                    </p>
+                    <p>
+                      <span>Phục vụ: 5%</span>
+                      <span>12,000đ</span>
+                    </p>
+                  </div>
+                  <div class="text-promotion">
+                    <ul>
+                      <li class="text-info"><p>(*) Nhập mã khuyến mãi ở bước hoàn tất</p></li>
+                      <li class="into-money">
+                        <span>Tạm tính</span>
+                        <span>2,600,000đ</span>
+                      </li>
+                      <li>
+                        <p class="more"><a href="#" data-toggle="modal" data-target="#myDelivery">đặt trước</a></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section menu -->
+
+      <!-- chăm sóc khách hàng -->
+      <div class="take-care">
+        <div class="title">
+          <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chăm sóc khách hàng</span></h3>
+        </div>
+        <div class="content-form">
+
+        </div>
+      </div>
+      <!-- end chăm sóc khách hàng -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <figure><img src="images/ok.png" alt=""></figure>
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            <p class="copy-right">
+              &copy; 2017 Vịt quay Trần Quang Ký . All rights reserved. <br class="sp-only" />Chính sách và quy định chung.<br>
+              Vịt quay Trần Quang Ký - GPKD số 03037044 ngày 26 tháng 06 năm 2017 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp phép
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+
+      $(function () {
+         $('#form_datetime').datetimepicker({
+             defaultDate: "11/1/2013",
+             disabledDates: [
+                 moment("12/25/2013"),
+                 new Date(2013, 11 - 1, 21),
+                 "11/22/2013"
+             ],
+             format: 'DD/mm/YYYY'
+         });
+         $('#myChoseAddress').modal('show')
+     });
+    </script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

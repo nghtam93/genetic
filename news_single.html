@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Vịt quay Trần Quang Ký</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/slider-pro.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Custom core CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <!-- header top -->
+      <section class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="action">
+                <li><a href="#" data-toggle="modal" data-target="#myModalLogin"><i class="fa fa-key" aria-hidden="true"></i>Đăng nhập</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModalSignUp"><i class="fa fa-pencil" aria-hidden="true"></i>Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row site-link">
+            <div class="col-sm-6">
+              <p class="info"><span>(澳門)</span> 陳光記 黑椒燒鴨</p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="link">
+                <li><a href="">giỏ hàng(0)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="search">
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                  <form method="get" action="">
+                    <input type="text" placeholder="" class="text" name="s" autocomplete="off" value="">
+                    <input type="submit" value="Search" class="submit">
+                  </form>
+                </li>
+                <li>
+                  <a href="#"><img src="images/flag-vn.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end header top -->
+
+      <!-- menu -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="introduce.html">GIỚI THIỆU</a></li>
+              <li><a href="menu.html">THỰC ĐƠN</a></li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="news.html">TIN TỨC</a>
+                <ul>
+                  <li><a href="">Hướng dẫn mua hàng</a></li>
+                  <li><a href="">Phương thức thanh toán</a></li>
+                </ul>
+              </li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="place.html">ĐỊA ĐIỂM</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- end header -->
+    </header>
+    <!-- end header -->
+
+    <!-- popup đăng nhập -->
+    <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="user_email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="user_password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng nhập<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng nhập -->
+
+    <!-- popup đăng ký -->
+    <div class="modal fade" id="myModalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">đăng ký</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline checkbox-title">
+                  Giới tính
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng ký<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng ký -->
+
+    <main>
+      <!-- section tin tức single -->
+      <section class="news-single-content">
+        <h2>Thịt ngan, gà, vịt, Thịt nào tốt hơn?</h2>
+        <div class="container">
+          <div class="row wow fadeIn">
+            <div class="col-sm-6 col-sm-push-6">
+              <figure><img src="images/news_single_img001.jpg" alt="Thịt ngan, gà, vịt, Thịt nào tốt hơn?"></figure>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+              <p>
+                Hàm lượng protein trong thịt gà cao hơn rất nhiều so với thịt ngan và thịt vit, song lượng vitamin A, B2 trong 2 loại thịt này lại cao hơn thịt gà.
+              </p>
+              <p>
+                Nên ăn thịt gia cầm<br>
+                Theo PGS.TS Nguyễn Duy Thịnh, cán bộ Viện Công nghệ Sinh học - Công nghệ Thực phẩm, Đại học Bách khoa Hà Nội, thịt là một trong những thực phẩm có giá trị dinh dưỡng cao, trong đó chủ yếu là chất đạm và chất béo, đồng thời có chứa nhiều axit amin cần thiết, chất khoáng, vitamin và một số các chất. Song, các loại thịt khác nhau đều có hương vị và giá trị khác nhau.
+              </p>
+              <p>
+                'Người ta phân loại thịt thành hai loại. Thịt đỏ gồm: bò, lợn, dê,… Thịt trắng gồm: gà, vịt, ngan… Thịt trắng luôn tốt hơn. Các chuyên gia thế giới cũng khuyến nghị nên ăn nhiều gia cầm hơn gia súc. Thứ nhất, hàm lượng protein có chứa trong gia cầm tương đối cao, là một trong những nguồn cung cấp protein chủ yếu cho cơ thể con người. Thứ hai, tỷ lệ mỡ trong thịt gia cầm rất thấp, trong đó có chứa hàm lượng axit béo và mỡ không no rất phong phú', PGS Thịnh cho hay.
+              </p>
+            </div>
+          </div>
+          <div class="row wow fadeIn">
+            <div class="col-sm-6">
+              <figure><img src="images/news_single_img002.jpg" alt="Thịt ngan, gà, vịt, Thịt nào tốt hơn?"></figure>
+            </div>
+            <div class="col-sm-6">
+              <p>
+                Đồng quan điểm, tiến sĩ, bác sĩ Nguyễn Trọng Hưng – Phó trưởng khoa Dinh dưỡng Lâm sàng &amp; Tiết chế - Khoa Khám tư vấn Dinh dưỡng số 2 (Viện Dinh dưỡng Quốc gia) cũng cho rằng việc ăn thịt các loại gia cầm như gà, vịt, ngan tốt hơn so với lợn, bò, dê bởi lượng chất béo trong thịt gia cầm ít hơn so với các loại thịt khác nhưng nó vẫn cung cấp đủ năng lượng cho cơ thể.
+              </p>
+              <p>
+                Gà, vịt, ngan khác nhau như thế nào?<br>
+                Về điều này, PGS Thịnh cho hay, gà bản chất sống trên cạn, vịt dưới nước, ngan thì vừa trên cạn, vừa dưới nước nên có sự khác nhau về tính vị. Còn về hàm lượng dinh dưỡng cũng có sự khác nhau song không đáng kể.<br>
+                Trong đó thịt gà là loại thịt con người thích ăn nhất do mùi vị thơm ngon, bổ dưỡng. Hàm lượng protein trong thịt gà cao hơn rất nhiều loại gia súc và cá, trong khi hàm lượng cholesterol tương đối thấp. Hàm lượng axit béo và không no cần thiết cho cơ thể cũng rất nhiều.<br>
+                Còn vịt và ngan được nuôi và ăn thịt ở nước ta nhiều cũng không kém thịt gà. Hàm lượng protein có trong hai loại thịt này thấp hơn thịt gà nhưng hàm lượng mỡ, vitamin A, B2 lại cao hơn. Hàm lượng của các nguyên tố vi lượng như sắt, kẽm, đồng cũng dồi dào hơn gà.
+              </p>
+            </div>
+          </div>
+          <div class="row wow fadeIn">
+            <div class="col-sm-6 col-sm-push-6">
+              <figure><img src="images/news_single_img003.jpg" alt="Thịt ngan, gà, vịt, Thịt nào tốt hơn?"></figure>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+              <p>
+                Tuy nhiên, ngoài protein, các bộ phận tích lũy lượng mỡ khác nhau. Chẳng hạn, phần lườn, bụng chứa nhiều protein và ít cholesterol nhất, còn nội tạng, đùi, cánh, cổ lại chứa rất nhiều cholesterol xấu.
+              </p>
+              <p>
+                'Thực chất, phần thịt trắng trong gà, ngan, vịt tốt hơn nhiều so với các phần khác như đùi, cánh,… Song, nhiều người đang ăn theo sở thích nên bỏ qua phần tốt của con vật. Nếu nấu ăn cho trẻ ăn dặm, các bạn nên dùng phần thịt lườn, bụng sẽ tốt hơn', bác sĩ Nguyễn Trọng Hưng thông tin.
+              </p>
+              <p>
+                So sánh thêm về 3 loại gia cầm phổ biến, PGS Thịnh cho biết, do môi trường sống, các loại có tính vị khác nhau. Trong đó, ngan và vịt có tính hàn, nên gây khó tiêu hơn hẳn thịt gà. Đó chính là lý do người ta chỉ dùng thịt gà để bồi bổ, chăm sóc người ốm.<br>
+                Còn theo thạc sĩ, lương y Đa khoa Vũ Quốc Trung, thịt vịt có vị ngọt, hơi mặn, tính hàn, tác dụng tư âm, dưỡng vị, lợi thủy tiêu thũng, giải độc. Ăn thịt vịt có tác dụng tốt trong việc hỗ trợ chữa bệnh tim mạch, hỗ trợ điều trị lao phổi và ung thư (đang  xạ trị, hóa trị).<br>
+                Ăn thịt vịt có ích cho người thể chất suy nhược, chán ăn, sốt, phù nề, người thể chất yếu sau khi bệnh, đổ mồ hôi ban đêm, lòng bàn tay bàn chân nóng, phụ nữ kinh nguyệt ít, khí hư bạch đới, sản phụ thiếu sữa.
+              </p>
+            </div>
+          </div>
+          <div class="row wow fadeIn">
+            <div class="col-sm-12">
+              <p>
+                Thịt gà trong đông y gọi kê nhục, phân thành hai loại, gà trống và gà mái. Gà trống thịt có vị ngọt, tính ấm, không động có tác dụng nuôi dưỡng bảo quản, vệ khí bên ngoài, bổ trung an thai, liền xương, trị bệnh ứ nước trong người, tê dại. Còn thịt gà mái có vị chua, tính bình không độc, trị phong hàn thấp chữa bị thương gãy xương, băng huyết và bạch đới. Gà không có gì độc nên hầu hết trẻ em và người già đều dùng được.
+              </p>
+              <p>
+                Cấm kỵ không nên ăn<br>
+                Theo các chuyên gia, mỗi loại thịt có đặc trưng riêng. Về cơ bản, gà, ngan hay vịt đều tốt cho cơ thể, song cũng có những trường hợp cần lưu ý khi ăn.<br>
+                Chẳng hạn, do thịt vịt - ngan có tính hàn, tác dụng bổ âm nên những người dương hư tỳ nhược, ngoại cảm chưa khỏi hẳn tạm thời chưa nên ăn.<br>
+                Người ốm yếu nên ăn thịt gà. Tuy nhiên, da gà và lòng trắng trứng gà lại nhiều mỡ, cholesterol nên những người huyết áp cao, bệnh tim mạch không nên ăn nhiều thịt gà, đặc biệt hai bộ phận này.
+              </p>
+              <p>
+                Lương y Trung lưu ý thêm, khi ăn thịt gà, kỵ nhất là ăn cùng với lá kinh giới vì dùng chung với thịt gà sẽ gây ra chứng đầy bụng, khó tiêu. Nếu ăn thường xuyên có thể khiến bạn bị táo bón
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section tin tức single -->
+
+      <!-- section khuyến mãi -->
+      <section class="content-promotion">
+        <h2>khuyến mãi</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 wow fadeIn">
+              <figure><a href="#"><img src="images/top_img010.png" alt="Lorem ipsum dolor sit amet consectetur adipisicing"></a></figure>
+              <div class="detail">
+                <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing</a></h3>
+                <p class="more"><a href="#">Xem chi tiết<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+            <div class="col-sm-4 wow fadeIn">
+              <figure><a href="#"><img src="images/top_img011.png" alt="Lorem ipsum dolor sit amet consectetur adipisicing"></a></figure>
+              <div class="detail">
+                <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing</a></h3>
+                <p class="more"><a href="#">Xem chi tiết<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+            <div class="col-sm-4 wow fadeIn">
+              <figure><a href="#"><img src="images/top_img012.png" alt="Lorem ipsum dolor sit amet consectetur adipisicing"></a></figure>
+              <div class="detail">
+                <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing</a></h3>
+                <p class="more"><a href="#">Xem chi tiết<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section khuyến mãi -->
+
+      <!-- chăm sóc khách hàng -->
+      <div class="take-care">
+        <div class="title">
+          <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chăm sóc khách hàng</span></h3>
+        </div>
+        <div class="content-form">
+
+        </div>
+      </div>
+      <!-- end chăm sóc khách hàng -->
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <figure><img src="images/ok.png" alt=""></figure>
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            <p class="copy-right">
+              &copy; 2017 Vịt quay Trần Quang Ký . All rights reserved. <br class="sp-only" />Chính sách và quy định chung.<br>
+              Vịt quay Trần Quang Ký - GPKD số 03037044 ngày 26 tháng 06 năm 2017 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp phép
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

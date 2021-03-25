@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Vịt quay Trần Quang Ký</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/slider-pro.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Custom core CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+  <body>
+
+    <!-- header -->
+    <header>
+      <!-- header top -->
+      <section class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="action">
+                <li><a href="#" data-toggle="modal" data-target="#myModalLogin"><i class="fa fa-key" aria-hidden="true"></i>Đăng nhập</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModalSignUp"><i class="fa fa-pencil" aria-hidden="true"></i>Đăng ký</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row site-link">
+            <div class="col-sm-6">
+              <p class="info"><span>(澳門)</span> 陳光記 黑椒燒鴨</p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="link">
+                <li><a href="">giỏ hàng(0)<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                </li>
+                <li class="search">
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                  <form method="get" action="">
+                    <input type="text" placeholder="" class="text" name="s" autocomplete="off" value="">
+                    <input type="submit" value="Search" class="submit">
+                  </form>
+                </li>
+                <li>
+                  <a href="#"><img src="images/flag-vn.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end header top -->
+
+      <!-- menu -->
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Vịt quay Trần Quang Ký"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="introduce.html">GIỚI THIỆU</a></li>
+              <li><a href="menu.html">THỰC ĐƠN</a></li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="news.html">TIN TỨC</a>
+                <ul>
+                  <li><a href="">Hướng dẫn mua hàng</a></li>
+                  <li><a href="">Phương thức thanh toán</a></li>
+                </ul>
+              </li>
+              <li><a href="">KHUYẾN MÃI</a></li>
+              <li><a href="place.html">ĐỊA ĐIỂM</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+      <!-- end header -->
+    </header>
+    <!-- end header -->
+    
+    <!-- popup đăng nhập -->
+    <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Đăng nhập</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="user_email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="user_password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng nhập<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng nhập -->
+    
+    <!-- popup đăng ký -->
+    <div class="modal fade" id="myModalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">đăng ký</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Họ và tên">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="re-password" placeholder="Nhập lại mật khẩu">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <label class="checkbox-inline checkbox-title">
+                  Giới tính
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"> Nam
+                </label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"> Nữ
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Email">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="address" placeholder="Địa chỉ">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="modal-button">
+                <button type="button">Đăng ký<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup đăng ký -->
+
+    <main>
+      <!-- section tuyển dụng -->      
+      <section class="recruitment-content">
+        <h2>TUYỂN DỤNG</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="tab-recruit">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active"><a href="#hr_policies" aria-controls="hr_policies" role="tab" data-toggle="tab">chính sách nhân sự</a></li>
+                  <li role="presentation"><a href="#vacancies" aria-controls="vacancies" role="tab" data-toggle="tab">vị trí tuyển dụng</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-sm-9">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="hr_policies">
+                  <h3>CHÍNH SÁCH NHÂN SỰ</h3>
+                  <p>
+                    Để Novaland trở thành nơi làm việc tốt và lý tưởng nhất cho người lao động là một trong những mục tiêu hàng đầu mà Tập đoàn hướng tới suốt thời gian qua. Chính vì vậy, chúng tôi tập trung xây dựng một môi trường làm việc mà mọi thành viên có điều kiện và cơ hội tốt nhất để cùng làm việc và đóng góp vào sự phát triển của Novaland và của mỗi cá nhân. Từ lãnh đạo của Tập đoàn đến toàn thể nhân viên cam kết cùng xây dựng Novaland trở thành một trong những nơi làm việc tốt nhất tại Việt Nam. 
+                  </p>
+                  <p>
+                    Năm 2015,  Novaland đã được bình chọn trong top 100 nơi làm việc tốt nhất năm Việt Nam. Năm nay, Novaland được trao tặng giải thưởng Asia Best Employee Awards 2016. Vừa qua, Tập đoàn Novaland vinh dự được vinh danh tại Vietnam HR Awards 2016 trao tặng giải thưởng các doanh nghiệp có chính sách nhân sự xuất sắc về lương thưởng phúc lợi, hoạch định và tuyển dụng nguồn nhân lực và có môi trường làm việc tốt.   
+                  </p>
+
+                  <ul class="list-info-recruit">
+                    <li>
+                      <h4>LƯƠNG VÀ PHÚC LỢI</h4>
+                      <p>
+                        Chính sách lương thưởng tại Novaland đều theo chuẩn cao của thị trường, có sự tư vấn so sánh của công ty chuyên nghiệp, cạnh tranh về mọi phương diện, bao gồm: lương, các khoản thưởng ngắn hạn và/hay dài hạn, các phụ cấp  bổ sung cho lương.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>CHÍNH SÁCH PHÚC LỢI</h4>
+                      <p>
+                        Tập đoàn luôn quan tâm và xây dựng chế độ phúc lợi tốt nhất cho nhân viên như Chương trình bảo hiểm y tế cao cấp mở rộng cho nhân viên và người nhà, chính sách khuyến học cho con em CBNV, mua sản phẩm công ty với giá ưu đãi…
+                      </p>
+                    </li>
+                    <li>
+                      <h4>ĐÀO TẠO VÀ PHÁT TRIỂN</h4>
+                      <p>
+                        Dựa trên định hướng phát triển của, Novaland, Tập đoàn luôn chú trọng và phát triển hệ thống đào tạo con người với những khóa học đa dạng dành cho nhiều cấp bậc để trau dồi cho nhân viên những tố chất, kỹ năng cần thiết; không chỉ nhằm mục đích hoàn thành công việc mà còn trang bị cho nhân viên sự hội nhập quốc tế. 
+                      </p>
+                    </li>
+                  </ul>
+                  <p>
+                    Các chương trình đào tạo phát triển nhân viên được xây dựng nhằm phát huy tối đa tiềm năng và định hướng nghề nghiệp, phù hợp với từng cá nhân. Sự công bằng, minh bạch trong công tác đào tạo phát triển đội ngũ tạo được gắn kết, hiệu quả trong công việc, củng cố và phát triển năng lực hội nhập cũng như khả năng làm việc trong môi trường quốc tế năng động cho đội ngũ  nhân viên, lãnh đạo của Tập đoàn. 
+                  </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="vacancies">
+                  <h3>CHÍNH SÁCH NHÂN SỰ</h3>
+                  <p>
+                    Để Novaland trở thành nơi làm việc tốt và lý tưởng nhất cho người lao động là một trong những mục tiêu hàng đầu mà Tập đoàn hướng tới suốt thời gian qua. Chính vì vậy, chúng tôi tập trung xây dựng một môi trường làm việc mà mọi thành viên có điều kiện và cơ hội tốt nhất để cùng làm việc và đóng góp vào sự phát triển của Novaland và của mỗi cá nhân. Từ lãnh đạo của Tập đoàn đến toàn thể nhân viên cam kết cùng xây dựng Novaland trở thành một trong những nơi làm việc tốt nhất tại Việt Nam. 
+                  </p>
+                  <p>
+                    Năm 2015,  Novaland đã được bình chọn trong top 100 nơi làm việc tốt nhất năm Việt Nam. Năm nay, Novaland được trao tặng giải thưởng Asia Best Employee Awards 2016. Vừa qua, Tập đoàn Novaland vinh dự được vinh danh tại Vietnam HR Awards 2016 trao tặng giải thưởng các doanh nghiệp có chính sách nhân sự xuất sắc về lương thưởng phúc lợi, hoạch định và tuyển dụng nguồn nhân lực và có môi trường làm việc tốt.   
+                  </p>
+
+                  <ul class="list-info-recruit">
+                    <li>
+                      <h4>LƯƠNG VÀ PHÚC LỢI</h4>
+                      <p>
+                        Chính sách lương thưởng tại Novaland đều theo chuẩn cao của thị trường, có sự tư vấn so sánh của công ty chuyên nghiệp, cạnh tranh về mọi phương diện, bao gồm: lương, các khoản thưởng ngắn hạn và/hay dài hạn, các phụ cấp  bổ sung cho lương.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>CHÍNH SÁCH PHÚC LỢI</h4>
+                      <p>
+                        Tập đoàn luôn quan tâm và xây dựng chế độ phúc lợi tốt nhất cho nhân viên như Chương trình bảo hiểm y tế cao cấp mở rộng cho nhân viên và người nhà, chính sách khuyến học cho con em CBNV, mua sản phẩm công ty với giá ưu đãi…
+                      </p>
+                    </li>
+                    <li>
+                      <h4>ĐÀO TẠO VÀ PHÁT TRIỂN</h4>
+                      <p>
+                        Dựa trên định hướng phát triển của, Novaland, Tập đoàn luôn chú trọng và phát triển hệ thống đào tạo con người với những khóa học đa dạng dành cho nhiều cấp bậc để trau dồi cho nhân viên những tố chất, kỹ năng cần thiết; không chỉ nhằm mục đích hoàn thành công việc mà còn trang bị cho nhân viên sự hội nhập quốc tế. 
+                      </p>
+                    </li>
+                  </ul>
+                  <p>
+                    Các chương trình đào tạo phát triển nhân viên được xây dựng nhằm phát huy tối đa tiềm năng và định hướng nghề nghiệp, phù hợp với từng cá nhân. Sự công bằng, minh bạch trong công tác đào tạo phát triển đội ngũ tạo được gắn kết, hiệu quả trong công việc, củng cố và phát triển năng lực hội nhập cũng như khả năng làm việc trong môi trường quốc tế năng động cho đội ngũ  nhân viên, lãnh đạo của Tập đoàn. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end section tuyển dụng -->
+
+      <!-- chăm sóc khách hàng --> 
+      <div class="take-care">
+        <div class="title">
+          <h3><i class="fa fa-comments-o" aria-hidden="true"></i><span>Chăm sóc khách hàng</span></h3>
+        </div>
+        <div class="content-form">
+
+        </div>
+      </div>
+      <!-- end chăm sóc khách hàng --> 
+    </main>
+    
+    <!-- footer --> 
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-2">
+            <figure><img src="images/ok.png" alt=""></figure>
+          </div>
+          <div class="col-lg-9 col-sm-10">
+            <p class="copy-right">
+              &copy; 2017 Vịt quay Trần Quang Ký . All rights reserved. <br class="sp-only" />Chính sách và quy định chung.<br>
+              Vịt quay Trần Quang Ký - GPKD số 03037044 ngày 26 tháng 06 năm 2017 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp phép
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
